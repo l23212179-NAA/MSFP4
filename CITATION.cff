@@ -1,0 +1,28 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'Práctica 4: Modelado y control del sistema endocrino'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Nicole
+    family-names: Arredondo Arevalo
+    email: L23212179@tijuana.tecnm.mx
+    affiliation: TecNM / IT Tijuana
+repository-code: 'https://github.com/l23212179-NAA/MSFP4'
+keywords:
+  - Sistema endocrino
+  - Regulación hormonal
+  - Homeostasis de glucosa
+  - Controlador PID
+  - Modelado de sistemas fisiológicos
+  - MATLAB
+  - Simulink
+  - Python
+  - Simulación in silico
+license: BSD-2-Clause
+version: '1.0'
+date-released: '2026-11-17'
