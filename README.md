@@ -286,14 +286,15 @@ flowchart TD
 
 ```text
 .
+├── Análisis_4.pdf                 # Análisis matemático de la practica
 ├── README.md                      # Reporte de la práctica y guía de reproducción
 ├── CITATION.cff                   # Archivo de citación académica
-├── Apellido_NoControl.mlx         # Cuaderno de MATLAB del estudiante
-├── Apellido_NoControl.pdf         # Exportación del cuaderno de MATLAB
-├── sistema_endocrino.slx          # Modelo de Simulink
-├── sistema_endocrino.py           # Script de simulación en Python
-├── diagrama_biologico.png        # Ilustración elaborada en BioRender
-└── evidencias/                   # Gráficas en formato PDF/PNG y capturas
+├── Arredondo23212179.mlx         # Cuaderno de MATLAB del estudiante
+├── Arredondo23212179.pdf         # Exportación del cuaderno de MATLAB
+├── sistema4.slx                  # Modelo de Simulink de la práctica 
+├── Arredondo23212179.py           # Script de simulación en Python
+├── BioRender4.png                 # Ilustración de la práctica en BioRender
+└── evidencias/                   # Gráficas en formato PDF/PNG/BMP y capturas
 ```
 [Volver al contenido](#contenido)
 
