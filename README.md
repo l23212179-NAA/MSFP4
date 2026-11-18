@@ -125,69 +125,90 @@ El sistema se aproxima mediante un modelo compartimental (como el modelo mínimo
 
 Aplicando las leyes de Kirchhoff al circuito eléctrico equivalente del sistema endócrino, se establece la relación entre la corriente de entrada $F_e(t)$, la corriente del capacitor $F_c(t)$ y la corriente de la rama de salida $F_s(t)$:
 
-math
-F_e(t)=F_c(t)+F_s(t).
-
+$$
+F_e(t)=F_c(t)+F_s(t)
+$$
 
 La corriente del capacitor está dada por:
 
-math
-F_c(t)=C\frac{dV_s(t)}{dt}.
-
+$$
+F_c(t)=C\frac{dV_s(t)}{dt}
+$$
 
 Para la resistencia de entrada:
 
-math
-V_e(t)=R_1F_e(t)+V_s(t).
-
+$$
+V_e(t)=R_1F_e(t)+V_s(t)
+$$
 
 Y para la rama formada por la inductancia $L$ y la resistencia $R_2$:
 
-math
-V_s(t)=L\frac{dF_s(t)}{dt}+R_2F_s(t).
-
+$$
+V_s(t)=L\frac{dF_s(t)}{dt}+R_2F_s(t)
+$$
 
 Por lo tanto, el modelo se expresa mediante:
 
-math
-\boxed{\frac{V_e(t)-V_s(t)}{R_1}=C\frac{dV_s(t)}{dt}+F_s(t)}
+$$
+\boxed{
+\frac{V_e(t)-V_s(t)}{R_1}
+=
+C\frac{dV_s(t)}{dt}+F_s(t)
+}
+$$
 
-
-math
-\boxed{L\frac{dF_s(t)}{dt}=V_s(t)-R_2F_s(t)}
-
+$$
+\boxed{
+L\frac{dF_s(t)}{dt}
+=
+V_s(t)-R_2F_s(t)
+}
+$$
 
 ### 2. Función de transferencia
 
 Aplicando la transformada de Laplace con condiciones iniciales nulas:
 
-math
-\frac{V_e(s)-V_s(s)}{R_1}=CsV_s(s)+F_s(s).
-
+$$
+\frac{V_e(s)-V_s(s)}{R_1}
+=
+CsV_s(s)+F_s(s)
+$$
 
 De la rama inductiva:
 
-math
-F_s(s)=\frac{V_s(s)}{Ls+R_2}.
-
+$$
+F_s(s)=\frac{V_s(s)}{Ls+R_2}
+$$
 
 Sustituyendo y agrupando términos:
 
-math
-[V_e(s)-V_s(s)](Ls+R_2)=R_1CsV_s(s)(Ls+R_2)+R_1V_s(s).
-
+$$
+[V_e(s)-V_s(s)](Ls+R_2)
+=
+R_1CsV_s(s)(Ls+R_2)+R_1V_s(s)
+$$
 
 Desarrollando la expresión:
 
-math
-V_e(s)(Ls+R_2)=V_s(s)\left[R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)\right].
-
+$$
+V_e(s)(Ls+R_2)
+=
+V_s(s)\left[
+R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)
+\right]
+$$
 
 Por lo tanto, la función de transferencia del sistema endócrino está dada por:
 
-math
-\boxed{G(s)=\frac{V_s(s)}{V_e(s)}=\frac{Ls+R_2}{R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)}}
-
+$$
+\boxed{
+G(s)=\frac{V_s(s)}{V_e(s)}
+=
+\frac{Ls+R_2}
+{R_1LCs^2+(L+R_1R_2C)s+(R_1+R_2)}
+}
+$$
 
 El denominador es de segundo grado debido a la presencia de dos elementos independientes de almacenamiento de energía: la capacitancia $C$ y la inductancia $L$.
 
@@ -197,17 +218,21 @@ El denominador es de segundo grado debido a la presencia de dos elementos indepe
 
 Considerando los parámetros $R_1=1000\ \Omega$, $L=0.1\ \mathrm{H}$, $C=10^{-6}\ \mathrm{F}$ y $R_2=100000\ \Omega$:
 
-math
-G_{\mathrm{control}}(s)=\frac{0.1s+100000}{0.0001s^2+100.1s+101000}.
-
+$$
+G_{\mathrm{control}}(s)=
+\frac{0.1s+100000}
+{0.0001s^2+100.1s+101000}
+$$
 
 *Condición alterada (caso)*
 
 Considerando $R_1=1000\ \Omega$, $L=0.1\ \mathrm{H}$, $C=10^{-3}\ \mathrm{F}$ y $R_2=1000\ \Omega$:
 
-math
-G_{\mathrm{caso}}(s)=\frac{0.1s+1000}{0.1s^2+1000.1s+2000}.
-
+$$
+G_{\mathrm{caso}}(s)=
+\frac{0.1s+1000}
+{0.1s^2+1000.1s+2000}
+$$
 
 La modificación simultánea de la capacitancia $C$ y la resistencia $R_2$ produce diferencias en la ganancia estática, la posición de los polos y la respuesta temporal de ambos modelos.
 
@@ -217,33 +242,44 @@ Definiendo las variables de estado $x_1(t)=V_s(t)$ y $x_2(t)=F_s(t)$, el modelo 
 
 A partir de la ley de corrientes de Kirchhoff:
 
-math
-\frac{V_e(t)-V_s(t)}{R_1}=C\frac{dV_s(t)}{dt}+F_s(t).
-
+$$
+\frac{V_e(t)-V_s(t)}{R_1}
+=
+C\frac{dV_s(t)}{dt}+F_s(t)
+$$
 
 Despejando la derivada de la primera variable de estado:
 
-math
-\boxed{frac{dx_1(t)}{dt}=\frac{V_e(t)-x_1(t)}{R_1C}-\frac{x_2(t)}{C}}
-
+$$
+\boxed{
+\frac{dx_1(t)}{dt}
+=
+\frac{V_e(t)-x_1(t)}{R_1C}
+-\frac{x_2(t)}{C}
+}
+$$
 
 Para la rama formada por $L$ y $R_2$:
 
-math
-V_s(t)=L\frac{dF_s(t)}{dt}+R_2F_s(t).
-
+$$
+V_s(t)=L\frac{dF_s(t)}{dt}+R_2F_s(t)
+$$
 
 Despejando la derivada de la segunda variable:
 
-math
-\boxed{\frac{dx_2(t)}{dt}=\frac{x_1(t)-R_2x_2(t)}{L}}
-
+$$
+\boxed{
+\frac{dx_2(t)}{dt}
+=
+\frac{x_1(t)-R_2x_2(t)}{L}
+}
+$$
 
 La variable de salida corresponde al voltaje del nodo:
 
-math
-V_s(t)=x_1(t).
-
+$$
+V_s(t)=x_1(t)
+$$
 
 Esta representación permite implementar el modelo mediante bloques de integración en Simulink y verificar su equivalencia con la función de transferencia y el circuito eléctrico equivalente construido en Simscape Electrical.
 
