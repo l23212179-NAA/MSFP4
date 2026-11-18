@@ -50,8 +50,6 @@ La práctica tiene como propósito **desarrollar un procedimiento completo de mo
 
 A través de la teoría de sistemas dinámicos y control clásico, se estudia el comportamiento homeostático comparando un sujeto sano frente a una patología endocrina representada por alteraciones en los parámetros cinéticos o de retroalimentación. Se incorpora un **controlador PID con retroalimentación negativa** que simula una intervención terapéutica o de soporte artificial para corregir la respuesta del sujeto con alteración endocrina. Los resultados se validan mediante MATLAB, Simulink y Python.
 
-> **Nota sobre el alcance:** Esta práctica se desarrolla exclusivamente mediante **experimentación *in silico***. La estrategia de control tiene propósitos didácticos y computacionales, sin constituir un tratamiento clínico real para patologías endocrinas.
-
 **Palabras clave:** sistema endocrino; regulación hormonal; homeostasis de glucosa; controlador PID; modelado de sistemas fisiológicos; MATLAB; Simulink; Python; simulación *in silico*.
 
 [Volver al contenido](#contenido)
