@@ -157,7 +157,7 @@ $$F_s(s)=\frac{V_s(s)}{Ls+R_2}$$
 
 Sustituyendo y agrupando términos:
 
-$$[V_e(s)-V_s(s)](Ls+R_2) = R_1CsV_s(s)(Ls+R_2)+R_1V_s(s)$$
+$$(V_e(s)-V_s(s))(Ls+R_2) = R_1CsV_s(s)(Ls+R_2)+R_1V_s(s)$$
 
 Desarrollando la expresión:
 
