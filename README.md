@@ -1,6 +1,6 @@
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=l23212179-NAA/MSFP4)
 
-# Práctica 5.6: Modelado y control del sistema endocrino
+# Práctica 4: Modelado y control del sistema endocrino
 
 Repositorio académico de la asignatura **Modelado de Sistemas Fisiológicos**, correspondiente al programa de **Ingeniería Biomédica** del Tecnológico Nacional de México / Instituto Tecnológico de Tijuana. Esta práctica integra el modelado dinámico de la regulación hormonal y metabólica (sistema endocrino), su representación mediante ecuaciones diferenciales y diagramas de bloques, análisis temporal y de estabilidad, diseño de controladores PID para regulación glucémica u hormonal, simulación computacional *in silico* y verificación cruzada entre múltiples plataformas.
 
